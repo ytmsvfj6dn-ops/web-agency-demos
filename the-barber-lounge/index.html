@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barber Lounge — Gents Grooming in Karama, Dubai</title>
+<meta name="description" content="The Barber Lounge — sharp cuts and precision beard grooming in Karama, Dubai. Trusted by 139+ five-star reviews. Book with Hussain or Hassan.">
+<style>
+  :root{--ink:#141416;--panel:#1d1e21;--cream:#f4f1ea;--gold:#c9a15a;--muted:#8c8d92;--line:#2a2b30}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--cream);background:var(--ink);line-height:1.6}
+  a{color:inherit}
+  .demo-banner{background:#000;color:#fff;text-align:center;font-size:13px;padding:8px 12px;letter-spacing:.3px}
+  .demo-banner b{color:var(--gold)}
+  header{position:sticky;top:0;background:rgba(20,20,22,.92);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:16px 6vw;border-bottom:1px solid var(--line);z-index:10}
+  .logo{font-weight:800;font-size:20px;letter-spacing:.5px;text-transform:uppercase}
+  .logo span{color:var(--gold)}
+  nav a{margin-left:26px;text-decoration:none;color:var(--cream);font-size:15px;font-weight:500}
+  nav a:hover{color:var(--gold)}
+  .nav-cta{background:var(--gold);color:#141416!important;padding:9px 18px;border-radius:4px;font-weight:700}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:70px 6vw 60px;background:radial-gradient(circle at 80% 20%,#1d1e21,#141416 60%)}
+  .hero-text{flex:1;min-width:300px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);color:var(--gold);font-size:13px;font-weight:700;padding:6px 12px;border-radius:30px;margin-bottom:18px}
+  .hero-text h1{font-size:46px;line-height:1.15;margin-bottom:18px;font-family:Georgia,'Times New Roman',serif}
+  .hero-text p{font-size:18px;color:var(--muted);max-width:480px;margin-bottom:28px}
+  .btn{display:inline-block;background:var(--gold);color:#141416;text-decoration:none;padding:14px 28px;border-radius:4px;font-weight:700;font-size:16px;transition:.2s;border:none;cursor:pointer}
+  .btn:hover{background:#b38a45}
+  .btn-ghost{background:transparent;color:var(--cream);border:2px solid var(--line);margin-left:12px}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .hero-img{flex:1;min-width:300px;height:380px;border-radius:8px;background:linear-gradient(135deg,#2a2b30,#141416 70%);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:88px;box-shadow:0 20px 50px rgba(0,0,0,.5);border:1px solid var(--line)}
+  section{padding:64px 6vw}
+  .section-title{text-align:center;font-size:32px;margin-bottom:8px;font-family:Georgia,'Times New Roman',serif}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:44px}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;max-width:1080px;margin:0 auto}
+  .service-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:28px;text-align:center}
+  .service-card .icon{font-size:28px;margin-bottom:14px}
+  .service-card h3{font-size:18px;margin-bottom:8px}
+  .service-card p{color:var(--muted);font-size:14.5px}
+  .team{background:var(--panel)}
+  .team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;max-width:800px;margin:0 auto}
+  .team-card{text-align:center}
+  .team-card .avatar{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#8a6a2e);display:flex;align-items:center;justify-content:center;font-size:42px;margin:0 auto 16px;color:#141416}
+  .team-card h3{font-size:19px;margin-bottom:4px}
+  .team-card p{color:var(--muted);font-size:14px}
+  .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:50px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{text-align:center}
+  .stat b{display:block;font-size:34px;color:var(--gold)}
+  .stat span{color:var(--muted);font-size:14px}
+  .testimonials{}
+  .test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1080px;margin:0 auto}
+  .test-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:26px}
+  .test-card .stars{color:var(--gold);margin-bottom:10px;letter-spacing:2px}
+  .test-card p{font-size:15px;color:#d7d8dc;margin-bottom:14px}
+  .test-card .who{font-size:13px;color:var(--muted)}
+  .visit-wrap{display:flex;flex-wrap:wrap;gap:30px;max-width:1080px;margin:0 auto}
+  .visit-card{flex:1;min-width:280px}
+  .info-row{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+  .info-row .icon{color:var(--gold);font-size:20px;margin-top:2px}
+  .info-row h4{font-size:15px;margin-bottom:2px}
+  .info-row p{color:var(--muted);font-size:14.5px}
+  .map-frame{flex:1;min-width:280px;height:320px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+  .map-frame iframe{width:100%;height:100%;border:0}
+  .contact{background:var(--panel)}
+  .contact-wrap{max-width:600px;margin:0 auto;background:var(--ink);border:1px solid var(--line);border-radius:8px;padding:36px}
+  .form-row{margin-bottom:16px}
+  .form-row label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  .form-row input,.form-row textarea{width:100%;padding:12px 14px;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--cream);font-family:inherit;font-size:15px}
+  .form-row input:focus,.form-row textarea:focus{outline:2px solid var(--gold)}
+  .cta-band{background:var(--gold);color:#141416;text-align:center;border-radius:12px;margin:0 6vw;padding:50px 20px}
+  .cta-band h2{font-size:30px;margin-bottom:12px;font-family:Georgia,'Times New Roman',serif}
+  .cta-band p{margin-bottom:24px;font-weight:500}
+  .cta-band .btn{background:#141416;color:#fff}
+  .cta-band .btn:hover{background:#000}
+  footer{text-align:center;padding:36px 6vw;color:var(--muted);font-size:14px}
+  footer a{color:var(--gold);text-decoration:none}
+  @media(max-width:640px){
+    header{flex-wrap:wrap;gap:12px;padding:14px 5vw}
+    .logo{font-size:16px;white-space:nowrap}
+    .hero-text h1{font-size:34px}
+    nav a:not(.nav-cta){display:none}
+    .nav-cta{padding:8px 14px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="demo-banner">✨ <b>CONCEPT DEMO</b> — built by [Your Agency] as a free sample for The Barber Lounge. Not affiliated with or endorsed by the business. Real photos and online booking would replace placeholders on launch.</div>
+
+<header>
+  <div class="logo">The Barber <span>Lounge</span></div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#team">Barbers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact" class="nav-cta">Book Now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="badge">★ 4.8 rating · 139 Google reviews</div>
+    <h1>Sharp cuts.<br>Perfect finish. Every time.</h1>
+    <p>Precision fades, beard grooming and classic gents' cuts in Karama — the shop regulars trust to keep them looking sharp.</p>
+    <a href="#contact" class="btn">Book an appointment</a>
+    <a href="tel:+971508036011" class="btn btn-ghost">Call 050 803 6011</a>
+  </div>
+  <div class="hero-img">💈</div>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>4.8★</b><span>Google rating</span></div>
+  <div class="stat"><b>139</b><span>Reviews</span></div>
+  <div class="stat"><b>2</b><span>Barbers on the floor</span></div>
+</div>
+
+<section id="services">
+  <h2 class="section-title">Services</h2>
+  <p class="section-sub">Classic and modern gents' grooming.</p>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon">✂️</div><h3>Precision Haircut</h3><p>Clean, sharp fades and classic cuts tailored to you.</p></div>
+    <div class="service-card"><div class="icon">🧔</div><h3>Beard Grooming</h3><p>Shaping, trimming and detailed beard dressing.</p></div>
+    <div class="service-card"><div class="icon">🪒</div><h3>Hot Towel Shave</h3><p>A classic, relaxing straight-razor finish.</p></div>
+    <div class="service-card"><div class="icon">👑</div><h3>Full Grooming</h3><p>Cut, beard and finishing touches — the complete package.</p></div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <h2 class="section-title">Meet the Barbers</h2>
+  <p class="section-sub">The names regulars ask for by name.</p>
+  <div class="team-grid">
+    <div class="team-card"><div class="avatar">H</div><h3>Hussain</h3><p>"Excellent barber with great attention to detail — sharp, professional cuts."</p></div>
+    <div class="team-card"><div class="avatar">H</div><h3>Hassan</h3><p>"Very professional touch" — praised alongside Hussain by regulars.</p></div>
+  </div>
+</section>
+
+<section class="testimonials" id="reviews">
+  <h2 class="section-title">What Customers Say</h2>
+  <p class="section-sub">Real reviews from Google.</p>
+  <div class="test-grid">
+    <div class="test-card"><div class="stars">★★★★★</div><p>"Hussain is an excellent barber with great attention to detail. His haircut is clean, stylish, and exactly as requested. Friendly service and highly recommended."</p><div class="who">— Harif T., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"Hussain bro nails the perfect haircut! Super professional and friendly. Wouldn't go to anyone else now! Easily the bestest one around."</p><div class="who">— Ankit K., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"Excellent work twin brother Hassan and Hussain — very professional touch."</p><div class="who">— Amal D., Google review</div></div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2 class="section-title">Visit Us</h2>
+  <p class="section-sub">Open daily in Karama.</p>
+  <div class="visit-wrap">
+    <div class="visit-card">
+      <div class="info-row"><div class="icon">📍</div><div><h4>Address</h4><p>Karama Gold Building, GF, near Karama Bus Station, Dubai</p></div></div>
+      <div class="info-row"><div class="icon">🕐</div><div><h4>Hours</h4><p>Open daily · Closes 10:30 PM</p></div></div>
+      <div class="info-row"><div class="icon">📞</div><div><h4>Phone</h4><p><a href="tel:+971508036011">050 803 6011</a></p></div></div>
+      <div class="info-row"><div class="icon">⭐</div><div><h4>Rating</h4><p>4.8 out of 5 — 139 Google reviews</p></div></div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=The+Barber+Lounge+Karama+Dubai&output=embed" loading="lazy" title="Map to The Barber Lounge"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Book an Appointment</h2>
+  <p class="section-sub">Reserve your slot with Hussain or Hassan.</p>
+  <div class="contact-wrap">
+    <form onsubmit="event.preventDefault();alert('This is a demo form — no booking was actually sent.');">
+      <div class="form-row"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+      <div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="05X XXX XXXX" required></div>
+      <div class="form-row"><label for="pref">Preferred barber</label><input id="pref" type="text" placeholder="Hussain, Hassan, or no preference"></div>
+      <div class="form-row"><label for="msg">Anything else?</label><textarea id="msg" rows="3" placeholder="Preferred day/time"></textarea></div>
+      <button type="submit" class="btn" style="width:100%">Request Booking</button>
+    </form>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready for a fresh cut?</h2>
+  <p>Walk in or book ahead — Karama's trusted gents' grooming lounge.</p>
+  <a href="tel:+971508036011" class="btn">Call 050 803 6011</a>
+</div>
+
+<footer>
+  <p>The Barber Lounge — Karama Gold Building, near Karama, Dubai</p>
+  <p style="margin-top:8px">This is a concept demo created by <a href="#">[Your Agency]</a> and is not the official website of The Barber Lounge.</p>
+</footer>
+
+</body>
+</html>

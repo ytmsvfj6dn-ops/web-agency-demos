@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple Seed Coffee Shop — Al Jafiliya, Dubai</title>
+<meta name="description" content="Cosy late-night coffee shop in Al Jafiliya, Dubai. Famous for karak tea and the Sweetheart milkshake. Open until 2 AM.">
+<style>
+  :root{--ink:#2b2118;--cream:#faf6ef;--accent:#c2703d;--accent2:#7a9e7e;--muted:#8a7a6b}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  a{color:inherit}
+  .demo-banner{background:var(--ink);color:#fff;text-align:center;font-size:13px;padding:8px 12px;letter-spacing:.3px}
+  .demo-banner b{color:#f0c9a8}
+  header{position:sticky;top:0;background:rgba(250,246,239,.92);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:16px 6vw;border-bottom:1px solid #ece2d6;z-index:10}
+  .logo{font-weight:800;font-size:21px}
+  .logo span{color:var(--accent)}
+  nav a{margin-left:26px;text-decoration:none;color:var(--ink);font-size:15px;font-weight:500}
+  nav a:hover{color:var(--accent)}
+  .nav-cta{background:var(--accent);color:#fff!important;padding:9px 18px;border-radius:30px}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:70px 6vw 60px}
+  .hero-text{flex:1;min-width:300px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #ece2d6;color:var(--accent);font-size:13px;font-weight:700;padding:6px 12px;border-radius:30px;margin-bottom:18px}
+  .hero-text h1{font-size:48px;line-height:1.12;margin-bottom:18px}
+  .hero-text p{font-size:18px;color:var(--muted);max-width:480px;margin-bottom:28px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 28px;border-radius:30px;font-weight:600;font-size:16px;transition:.2s;border:none;cursor:pointer}
+  .btn:hover{background:#a85a2e}
+  .btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);margin-left:12px}
+  .hero-img{flex:1;min-width:300px;height:380px;border-radius:20px;background:linear-gradient(135deg,#d9a679,#c2703d 60%,#7a4a25);display:flex;align-items:center;justify-content:center;color:#fff;font-size:90px;box-shadow:0 20px 50px rgba(120,74,37,.25)}
+  section{padding:60px 6vw}
+  .section-title{text-align:center;font-size:34px;margin-bottom:8px}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:40px}
+  .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1000px;margin:0 auto}
+  .menu-card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 24px rgba(43,33,24,.06)}
+  .menu-card h3{font-size:20px;margin-bottom:6px}
+  .menu-card .tag{background:#f3e9dd;color:var(--accent);font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;float:right}
+  .menu-card p{color:var(--muted);font-size:14px;margin-top:8px}
+  .about{background:#fff}
+  .about-wrap{display:flex;flex-wrap:wrap;gap:40px;align-items:center;max-width:1000px;margin:0 auto}
+  .about-img{flex:1;min-width:260px;height:300px;border-radius:18px;background:linear-gradient(135deg,var(--accent2),#4e7052);display:flex;align-items:center;justify-content:center;font-size:80px;color:#fff}
+  .about-text{flex:1;min-width:260px}
+  .about-text h2{font-size:32px;margin-bottom:16px}
+  .about-text p{color:var(--muted);margin-bottom:14px}
+  .testimonials{}
+  .test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1000px;margin:0 auto}
+  .test-card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 24px rgba(43,33,24,.06)}
+  .test-card .stars{color:var(--accent);margin-bottom:10px;letter-spacing:2px}
+  .test-card p{font-size:15px;color:#5a4c3f;margin-bottom:14px}
+  .test-card .who{font-size:13px;color:var(--muted)}
+  .visit-wrap{display:flex;flex-wrap:wrap;gap:30px;max-width:1000px;margin:0 auto}
+  .visit-card{flex:1;min-width:280px}
+  .info-row{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+  .info-row .icon{color:var(--accent);font-size:20px;margin-top:2px}
+  .info-row h4{font-size:15px;margin-bottom:2px}
+  .info-row p{color:var(--muted);font-size:14.5px}
+  .map-frame{flex:1;min-width:280px;height:320px;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(43,33,24,.06)}
+  .map-frame iframe{width:100%;height:100%;border:0}
+  .contact{background:#fff}
+  .contact-wrap{max-width:600px;margin:0 auto;background:var(--cream);border-radius:20px;padding:36px}
+  .form-row{margin-bottom:16px}
+  .form-row label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  .form-row input,.form-row textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #ece2d6;background:#fff;color:var(--ink);font-family:inherit;font-size:15px}
+  .form-row input:focus,.form-row textarea:focus{outline:2px solid var(--accent)}
+  .cta-band{background:var(--ink);color:#fff;text-align:center;border-radius:24px;margin:0 6vw;padding:50px 20px}
+  .cta-band h2{font-size:32px;margin-bottom:14px}
+  .cta-band p{color:#d9c9ba;margin-bottom:24px}
+  footer{text-align:center;padding:36px 6vw;color:var(--muted);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:640px){
+    header{flex-wrap:wrap;gap:12px;padding:14px 5vw}
+    .logo{font-size:17px;white-space:nowrap}
+    .hero-text h1{font-size:36px}
+    nav a:not(.nav-cta){display:none}
+    .nav-cta{padding:8px 14px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="demo-banner">✨ <b>CONCEPT DEMO</b> — built by [Your Agency] as a free sample for Apple Seed Coffee Shop. Not affiliated with or endorsed by the business. Real photos and menu pricing would replace placeholders on launch.</div>
+
+<header>
+  <div class="logo">🍃 Apple<span>Seed</span></div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact" class="nav-cta">Find Us</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="badge">★ 4.8 rating · 32 Google reviews</div>
+    <h1>Karak that regulars<br>drive across town for.</h1>
+    <p>A cosy corner in Al Jafiliya serving the best karak tea in the neighbourhood, fresh food, and good company — open till 2 AM.</p>
+    <a href="#menu" class="btn">See the menu</a>
+    <a href="#visit" class="btn btn-ghost">Get directions</a>
+  </div>
+  <div class="hero-img">☕</div>
+</section>
+
+<section id="menu">
+  <h2 class="section-title">Fan Favourites</h2>
+  <p class="section-sub">What regulars keep coming back for.</p>
+  <div class="menu-grid">
+    <div class="menu-card"><h3>Karak Tea <span class="tag">Signature</span></h3><p>"The best karak I've ever had" — the drink Apple Seed is known for.</p></div>
+    <div class="menu-card"><h3>Sweetheart Milkshake <span class="tag">Popular</span></h3><p>The milkshake regulars name by name — sweet, thick, and a little different.</p></div>
+    <div class="menu-card"><h3>Triple Slice Sandwich</h3><p>A hearty, satisfying sandwich — good any time of day (or night).</p></div>
+    <div class="menu-card"><h3>Nuggets</h3><p>A late-night favourite for the after-hours crowd.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-img">🌱</div>
+    <div class="about-text">
+      <h2>Small shop, big regulars</h2>
+      <p>Apple Seed Coffee Shop is the kind of place where the owner remembers your order — reviewers talk about being personally won over on their first visit and coming back ever since.</p>
+      <p>Open until 2 AM, it's become a go-to for karak, a quick bite, and a place to slow down late in the evening.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="reviews">
+  <h2 class="section-title">What Customers Say</h2>
+  <p class="section-sub">Real reviews from Google.</p>
+  <div class="test-grid">
+    <div class="test-card"><div class="stars">★★★★★</div><p>"I've lived in Dubai my whole life and had karak tea thousands of times. I can confidently say their karak was the best I've ever had. Can't recommend this place highly enough."</p><div class="who">— Khaled A., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"I ordered the Sweetheart milkshake and tea — a very pleasant experience. The owner is what converted me from a one-time customer to a regular."</p><div class="who">— Jean H., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"Love this place. Best for a karak with friends!"</p><div class="who">— Alyssa Y., Google review</div></div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2 class="section-title">Visit Us</h2>
+  <p class="section-sub">Open late, seven days a week.</p>
+  <div class="visit-wrap">
+    <div class="visit-card">
+      <div class="info-row"><div class="icon">📍</div><div><h4>Address</h4><p>8 35th St, Al Jafiliya, Dubai</p></div></div>
+      <div class="info-row"><div class="icon">🕐</div><div><h4>Hours</h4><p>Open daily · Closes 2 AM</p></div></div>
+      <div class="info-row"><div class="icon">📞</div><div><h4>Phone</h4><p><a href="tel:+971549942030">054 994 2030</a></p></div></div>
+      <div class="info-row"><div class="icon">💵</div><div><h4>Price range</h4><p>AED 1–50 per person</p></div></div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Apple+Seed+Coffee+Shop+Al+Jafiliya+Dubai&output=embed" loading="lazy" title="Map to Apple Seed Coffee Shop"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Say Hello</h2>
+  <p class="section-sub">Questions, group bookings, or feedback — send a message.</p>
+  <div class="contact-wrap">
+    <form onsubmit="event.preventDefault();alert('This is a demo form — no message was actually sent.');">
+      <div class="form-row"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+      <div class="form-row"><label for="phone">Phone / WhatsApp</label><input id="phone" type="tel" placeholder="05X XXX XXXX" required></div>
+      <div class="form-row"><label for="msg">Message</label><textarea id="msg" rows="4" placeholder="How can we help?"></textarea></div>
+      <button type="submit" class="btn" style="width:100%">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Craving karak?</h2>
+  <p>Open until 2 AM in Al Jafiliya — drop by any time.</p>
+  <a href="tel:+971549942030" class="btn">Call 054 994 2030</a>
+</div>
+
+<footer>
+  <p>Apple Seed Coffee Shop — 8 35th St, Al Jafiliya, Dubai</p>
+  <p style="margin-top:8px">This is a concept demo created by <a href="#">[Your Agency]</a> and is not the official website of Apple Seed Coffee Shop.</p>
+</footer>
+
+</body>
+</html>

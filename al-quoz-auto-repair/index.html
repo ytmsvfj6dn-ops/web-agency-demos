@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Quoz Auto Repair — Trusted Car Garage in Al Quoz, Dubai</title>
+<meta name="description" content="Honest, skilled auto repair and servicing in Al Quoz, Dubai. Diagnostics, general repair, and workshop servicing for all makes. Call 054 990 5059.">
+<style>
+  :root{--ink:#1b1c20;--panel:#232429;--cream:#f6f5f2;--accent:#e0862c;--accent2:#3f7d5c;--muted:#8b8d95;--line:#2e2f36}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--cream);background:var(--ink);line-height:1.6}
+  a{color:inherit}
+  .demo-banner{background:#000;color:#fff;text-align:center;font-size:13px;padding:8px 12px;letter-spacing:.3px}
+  .demo-banner b{color:var(--accent)}
+  header{position:sticky;top:0;background:rgba(27,28,32,.92);backdrop-filter:blur(8px);display:flex;justify-content:space-between;align-items:center;padding:16px 6vw;border-bottom:1px solid var(--line);z-index:10}
+  .logo{font-weight:800;font-size:21px;letter-spacing:.3px;display:flex;align-items:center;gap:8px}
+  .logo span{color:var(--accent)}
+  nav a{margin-left:26px;text-decoration:none;color:var(--cream);font-size:15px;font-weight:500}
+  nav a:hover{color:var(--accent)}
+  .nav-cta{background:var(--accent);color:#1b1c20!important;padding:9px 18px;border-radius:6px;font-weight:700}
+  .hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding:70px 6vw 60px;background:linear-gradient(180deg,#1b1c20,#1f2025)}
+  .hero-text{flex:1;min-width:300px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:var(--panel);border:1px solid var(--line);color:var(--accent);font-size:13px;font-weight:700;padding:6px 12px;border-radius:30px;margin-bottom:18px}
+  .hero-text h1{font-size:46px;line-height:1.15;margin-bottom:18px}
+  .hero-text p{font-size:18px;color:var(--muted);max-width:480px;margin-bottom:28px}
+  .btn{display:inline-block;background:var(--accent);color:#1b1c20;text-decoration:none;padding:14px 28px;border-radius:6px;font-weight:700;font-size:16px;transition:.2s;border:none;cursor:pointer}
+  .btn:hover{background:#c97220}
+  .btn-ghost{background:transparent;color:var(--cream);border:2px solid var(--line);margin-left:12px}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .hero-img{flex:1;min-width:300px;height:380px;border-radius:14px;background:linear-gradient(135deg,#2e2f36,#1b1c20 70%);display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:88px;box-shadow:0 20px 50px rgba(0,0,0,.4);border:1px solid var(--line)}
+  section{padding:64px 6vw}
+  .section-title{text-align:center;font-size:32px;margin-bottom:8px}
+  .section-sub{text-align:center;color:var(--muted);margin-bottom:44px}
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;max-width:1080px;margin:0 auto}
+  .service-card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:28px}
+  .service-card .icon{font-size:30px;margin-bottom:14px}
+  .service-card h3{font-size:19px;margin-bottom:8px}
+  .service-card p{color:var(--muted);font-size:14.5px}
+  .stats{display:flex;flex-wrap:wrap;justify-content:center;gap:50px;background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{text-align:center}
+  .stat b{display:block;font-size:34px;color:var(--accent)}
+  .stat span{color:var(--muted);font-size:14px}
+  .about-wrap{display:flex;flex-wrap:wrap;gap:40px;align-items:center;max-width:1080px;margin:0 auto}
+  .about-img{flex:1;min-width:260px;height:300px;border-radius:14px;background:linear-gradient(135deg,var(--accent2),#274a37);display:flex;align-items:center;justify-content:center;font-size:74px;color:#fff}
+  .about-text{flex:1;min-width:260px}
+  .about-text h2{font-size:30px;margin-bottom:16px}
+  .about-text p{color:var(--muted);margin-bottom:14px}
+  .testimonials{background:var(--panel)}
+  .test-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;max-width:1080px;margin:0 auto}
+  .test-card{background:var(--ink);border:1px solid var(--line);border-radius:14px;padding:26px}
+  .test-card .stars{color:var(--accent);margin-bottom:10px;letter-spacing:2px}
+  .test-card p{font-size:15px;color:#d7d8dc;margin-bottom:14px}
+  .test-card .who{font-size:13px;color:var(--muted)}
+  .visit-wrap{display:flex;flex-wrap:wrap;gap:30px;max-width:1080px;margin:0 auto}
+  .visit-card{flex:1;min-width:280px}
+  .info-row{display:flex;gap:12px;margin-bottom:16px;align-items:flex-start}
+  .info-row .icon{color:var(--accent);font-size:20px;margin-top:2px}
+  .info-row h4{font-size:15px;margin-bottom:2px}
+  .info-row p{color:var(--muted);font-size:14.5px}
+  .map-frame{flex:1;min-width:280px;height:320px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .map-frame iframe{width:100%;height:100%;border:0}
+  .contact{background:var(--panel)}
+  .contact-wrap{max-width:600px;margin:0 auto;background:var(--ink);border:1px solid var(--line);border-radius:16px;padding:36px}
+  .form-row{margin-bottom:16px}
+  .form-row label{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  .form-row input,.form-row textarea{width:100%;padding:12px 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--cream);font-family:inherit;font-size:15px}
+  .form-row input:focus,.form-row textarea:focus{outline:2px solid var(--accent)}
+  .cta-band{background:var(--accent);color:#1b1c20;text-align:center;border-radius:20px;margin:0 6vw;padding:50px 20px}
+  .cta-band h2{font-size:30px;margin-bottom:12px}
+  .cta-band p{margin-bottom:24px;font-weight:500}
+  .cta-band .btn{background:#1b1c20;color:#fff}
+  .cta-band .btn:hover{background:#000}
+  footer{text-align:center;padding:36px 6vw;color:var(--muted);font-size:14px}
+  footer a{color:var(--accent);text-decoration:none}
+  @media(max-width:640px){
+    header{flex-wrap:wrap;gap:12px;padding:14px 5vw}
+    .logo{font-size:17px;white-space:nowrap}
+    .hero-text h1{font-size:34px}
+    nav a:not(.nav-cta){display:none}
+    .nav-cta{padding:8px 14px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+<div class="demo-banner">✨ <b>CONCEPT DEMO</b> — built by [Your Agency] as a free sample for Al Quoz Auto Repair. Not affiliated with or endorsed by the business. Real photos, booking and content would replace placeholders on launch.</div>
+
+<header>
+  <div class="logo">🔧 Al Quoz<span>.</span>Auto Repair</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact" class="nav-cta">Book a Service</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <div class="badge">★ 4.9 rating · 17 Google reviews</div>
+    <h1>Honest car repair,<br>done right the first time.</h1>
+    <p>Diagnostics, general repair and full workshop servicing in the heart of Al Quoz. Fair pricing, skilled technicians, no shortcuts.</p>
+    <a href="tel:+971549905059" class="btn">Call 054 990 5059</a>
+    <a href="#services" class="btn btn-ghost">See services</a>
+  </div>
+  <div class="hero-img">🚗</div>
+</section>
+
+<div class="stats">
+  <div class="stat"><b>4.9★</b><span>Google rating</span></div>
+  <div class="stat"><b>17</b><span>5-star reviews</span></div>
+  <div class="stat"><b>7</b><span>Days a week open</span></div>
+</div>
+
+<section id="services">
+  <h2 class="section-title">What We Do</h2>
+  <p class="section-sub">Full-service workshop for all makes and models.</p>
+  <div class="services-grid">
+    <div class="service-card"><div class="icon">🩺</div><h3>Diagnostics</h3><p>Precise fault-finding before any work starts — no guesswork, no unnecessary parts.</p></div>
+    <div class="service-card"><div class="icon">🛠️</div><h3>General Repair</h3><p>Engine, suspension, brakes and electrical work carried out by experienced technicians.</p></div>
+    <div class="service-card"><div class="icon">🧰</div><h3>Workshop Servicing</h3><p>Routine maintenance and full servicing to keep your car running reliably.</p></div>
+    <div class="service-card"><div class="icon">💬</div><h3>Straight Talk Pricing</h3><p>Clear quotes before we start. No surprises on the final bill.</p></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-wrap">
+    <div class="about-img">🏁</div>
+    <div class="about-text">
+      <h2>A neighbourhood garage, built on trust</h2>
+      <p>Al Quoz Auto Repair has built its reputation the old-fashioned way — through honest work and technicians who care about getting the job right. Regulars keep coming back and asking for the team by name.</p>
+      <p>No corporate upsells, no confusing invoices — just a straightforward garage that fixes your car properly.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials" id="reviews">
+  <h2 class="section-title">What Customers Say</h2>
+  <p class="section-sub">Real reviews from Google.</p>
+  <div class="test-grid">
+    <div class="test-card"><div class="stars">★★★★★</div><p>"This is the BEST vehicle workshop in the area. From diagnosis to final delivery, everything was handled in a TOP professional manner. Honest pricing, skilled technicians, and great customer service."</p><div class="who">— Kerthu M., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"Your attention to detail and commitment to excellence are clearly reflected in your work. Appu 👍"</p><div class="who">— Abdul L., Google review</div></div>
+    <div class="test-card"><div class="stars">★★★★★</div><p>"I highly recommend Deekshith for his outstanding professionalism and dedication. Very happy — thanks to the auto repair garage."</p><div class="who">— Sukhesh, Google review</div></div>
+  </div>
+</section>
+
+<section id="visit">
+  <h2 class="section-title">Visit the Workshop</h2>
+  <p class="section-sub">Open seven days a week.</p>
+  <div class="visit-wrap">
+    <div class="visit-card">
+      <div class="info-row"><div class="icon">📍</div><div><h4>Address</h4><p>Al Qouz Ind. Third, Al Quoz, Dubai</p></div></div>
+      <div class="info-row"><div class="icon">🕐</div><div><h4>Hours</h4><p>Open daily · Closes 7 PM</p></div></div>
+      <div class="info-row"><div class="icon">📞</div><div><h4>Phone</h4><p><a href="tel:+971549905059">054 990 5059</a></p></div></div>
+      <div class="info-row"><div class="icon">⭐</div><div><h4>Rating</h4><p>4.9 out of 5 — 17 Google reviews</p></div></div>
+    </div>
+    <div class="map-frame">
+      <iframe src="https://www.google.com/maps?q=Al+Quoz+Auto+Repair+Dubai&output=embed" loading="lazy" title="Map to Al Quoz Auto Repair"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Book a Service</h2>
+  <p class="section-sub">Send a quick message or just call — we'll get back to you the same day.</p>
+  <div class="contact-wrap">
+    <form onsubmit="event.preventDefault();alert('This is a demo form — no message was actually sent.');">
+      <div class="form-row"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+      <div class="form-row"><label for="phone">Phone</label><input id="phone" type="tel" placeholder="05X XXX XXXX" required></div>
+      <div class="form-row"><label for="msg">What does your car need?</label><textarea id="msg" rows="4" placeholder="e.g. AC not cooling, strange noise when braking..."></textarea></div>
+      <button type="submit" class="btn" style="width:100%">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Need your car looked at?</h2>
+  <p>Call now or drop by the workshop in Al Quoz — same-day diagnostics available.</p>
+  <a href="tel:+971549905059" class="btn">Call 054 990 5059</a>
+</div>
+
+<footer>
+  <p>Al Quoz Auto Repair — Al Qouz Ind. Third, Al Quoz, Dubai</p>
+  <p style="margin-top:8px">This is a concept demo created by <a href="#">[Your Agency]</a> and is not the official website of Al Quoz Auto Repair.</p>
+</footer>
+
+</body>
+</html>
